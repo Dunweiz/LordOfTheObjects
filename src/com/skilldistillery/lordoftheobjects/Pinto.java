@@ -44,8 +44,9 @@ public class Pinto extends Vehicle {
 				System.out.println("Hmm waiting seems to have worked the animals are leaving");
 				this.setCondition(this.getCondition() - 0);
 			}
+			System.out.println(this.getCondition());
 		}
-
+		System.out.println("You passed that challenge and turned left only to run into.");
 		if (o == obstacle.getObstacle()[1]) {
 			System.out.println("1: Drive under Godzilla Dancing.");
 			System.out.println("2: Drive around Godzilla Dancing.");
@@ -68,8 +69,9 @@ public class Pinto extends Vehicle {
 				this.setCondition(this.getCondition() - 1);
 
 			}
-
+			System.out.println(this.getCondition());
 		}
+		System.out.println("You got lucky and made it pass that but what blocks your path now is.");
 		
 		if ( o == obstacle.getObstacle()[2]) {
 			System.out.println("1. Drive through.");
@@ -84,7 +86,7 @@ public class Pinto extends Vehicle {
 			}
 			if (decision == 2) {
 				System.out
-						.println(" You alerted more monsters and the avengers lost the fight.");
+						.println(" You alerted more monsters and the avengers lost the fight the city blows up and so does your car.");
 				this.setCondition(this.getCondition() - 10);
 
 			}
@@ -95,6 +97,7 @@ public class Pinto extends Vehicle {
 
 			
 		}
+			
 			System.out.println(this.getCondition());
 		}
 	}

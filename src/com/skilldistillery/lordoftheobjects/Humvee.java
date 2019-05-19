@@ -86,6 +86,7 @@ public class Humvee extends Vehicle {
 			if (decision == 2) {
 				System.out.println("You dont stop fast enough and crash into the upside down car");
 			}
+			System.out.println(this.getCondition());
 		}
 	}
 }
