@@ -44,7 +44,7 @@ public class Camry extends Vehicle {
 				System.out.println("Hmm waiting seems to have worked the animals are leaving");
 				this.setCondition(this.getCondition() - 0);
 			}
-			System.out.println(this.getCondition());
+			System.out.println("condition of vehicle is: " + this.getCondition());
 		}
 		
 		if (o == obstacle.getObstacle()[1]) {
@@ -69,7 +69,7 @@ public class Camry extends Vehicle {
 				this.setCondition(this.getCondition() - 0);
 
 			}
-			System.out.println(this.getCondition());
+			System.out.println("condition of vehicle is: " + this.getCondition());
 		}
 		if (o == obstacle.getObstacle()[2]) {
 			System.out.println("1. Drive through.");
@@ -92,7 +92,7 @@ public class Camry extends Vehicle {
 				System.out.println("The avengers heard your cry and braught you to safety");
 				this.setCondition(this.getCondition() - 0);
 			}
-			System.out.println(this.getCondition());
+			System.out.println("condition of vehicle is: " + this.getCondition());
 		}
 	}
 }

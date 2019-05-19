@@ -44,7 +44,7 @@ public class Humvee extends Vehicle {
 				System.out.println("You drive past undamaged, continue on");
 				this.setCondition(this.getCondition() - 0);
 			}
-			System.out.println(this.getCondition());
+			System.out.println("condition of vehicle is: " + this.getCondition());
 		}
 
 		if (o == obstacle.getObstacle()[1]) {
@@ -69,7 +69,7 @@ public class Humvee extends Vehicle {
 				this.setCondition(this.getCondition() - 1);
 
 			}
-			System.out.println(this.getCondition());
+			System.out.println("condition of vehicle is: " + this.getCondition());
 		}
 		if (o == obstacle.getObstacle()[2]) {
 			System.out.println("1: Thor battles Thanos, throwing his hammer");
@@ -86,7 +86,7 @@ public class Humvee extends Vehicle {
 			if (decision == 2) {
 				System.out.println("You dont stop fast enough and crash into the upside down car");
 			}
-			System.out.println(this.getCondition());
+			System.out.println("condition of vehicle is: " + this.getCondition());
 		}
 	}
 }

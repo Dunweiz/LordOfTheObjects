@@ -35,9 +35,11 @@ public class GameApp {
 			System.out.println();
 			player = new Pinto(5, "Small", "Combustable", "Spontaneously combusts");
 		}
+		System.out.println();
+		System.out.println("You start your travel down the road and after you made a left turn .");
 		
 		System.out.println();
-		for (int i = 1; i < 3 ; i++) {
+		for (int i = 1; i < 4 ; i++) {
 			player.comfrontObstacle(kb); }
 		
 		System.out.println(" Congradulations! You have survived the morning commute. " 
