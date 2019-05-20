@@ -20,11 +20,9 @@ public class Battle {
 		int random = (int) Math.floor(Math.random() * task.length);
 		int newrandom = random;
 		System.out.println(random);
-			while(newrandom == random) {
-			 random = (int) Math.floor(Math.random() * task.length);
-			}
-			
-		
+		while (newrandom == random) {
+			random = (int) Math.floor(Math.random() * task.length);
+		}
 
 		return task[newrandom];
 
@@ -43,6 +41,5 @@ public class Battle {
 //		picked += x;
 //		
 //		return obstaclePicked;
-
 	}
 }

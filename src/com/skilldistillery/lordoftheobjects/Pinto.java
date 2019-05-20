@@ -45,8 +45,11 @@ public class Pinto extends Vehicle {
 				this.setCondition(this.getCondition() - 0);
 			}
 			System.out.println("condition of vehicle is: " + this.getCondition());
-			System.out.println("You passed that challenge and turned left only to run into.");
+			System.out.println();
+			System.out.println("After getting out of there you run into");
+			System.out.println();
 		}
+		
 		if (o == obstacle.getObstacle()[1]) {
 			System.out.println("1: Drive under Godzilla Dancing.");
 			System.out.println("2: Drive around Godzilla Dancing.");
@@ -55,21 +58,31 @@ public class Pinto extends Vehicle {
 
 			if (decision == 1) {
 				System.out.println("Godzilla saw your ugly car and stomped on you.");
-				this.setCondition(this.getCondition() - 10);
-
+				int damage = (int) (Math.floor(Math.random() * 6) + 4) ;
+				System.out.println("Your car took : " + damage + " damage");
+				this.setCondition(this.getCondition() - damage);
+				
 			}
 			if (decision == 2) {
 				System.out.println(
 						"Godzilla thaught a cockroach ran passed his foot and ran away.");
+//				int damage = (int) (Math.floor(Math.random() * 6) + 4) ;
+				System.out.println("Your car took 0 damage");
 				this.setCondition(this.getCondition() - 0);
 
 			}
 			if (decision == 3) {
 				System.out.println("Before Godzilla got tired from dancing your car exhaust fell off.");
-				this.setCondition(this.getCondition() - 1);
+				int damage = (int) (Math.floor(Math.random() * 2) + 1) ;
+				System.out.println("Your car took : " + damage + " damage");
+				this.setCondition(this.getCondition() - damage);
 
 			}
+			
 			System.out.println("condition of vehicle is: " + this.getCondition());
+			System.out.println();
+			System.out.println("After that you drove down the road and make a left and encounter");
+			System.out.println();
 		}
 		
 		if ( o == obstacle.getObstacle()[2]) {
@@ -80,24 +93,33 @@ public class Pinto extends Vehicle {
 
 			if (decision == 1) {
 				System.out.println("Your car blended in with the destruction and no one noticed you.");
+				System.out.println("Your car took : 0 damage");
 				this.setCondition(this.getCondition() - 0);
 
 			}
 			if (decision == 2) {
 				System.out
 						.println(" You alerted more monsters and the avengers lost the fight the city blows up and so does your car.");
-				this.setCondition(this.getCondition() - 10);
+				int damage = (int) (Math.floor(Math.random() * 6) + 4) ;
+				System.out.println("Your car took : " + damage + " damage");
+				
+				this.setCondition(this.getCondition() - damage);
 
 			}
 			if (decision == 3) {
 				System.out.println("You jumped out of your moving car, when the car hit thanos it exploded."
 						+ "But an alien came up behind you and stabbed you.");
-				this.setCondition(this.getCondition() - 10);
+				int damage = (int) (Math.floor(Math.random() * 8) + 6) ;
+				System.out.println("Your car took : " + damage + " damage");
+				this.setCondition(this.getCondition() - damage);
 
 			
 		}
 			
 			System.out.println("condition of vehicle is: " + this.getCondition());
+			System.out.println();
+			System.out.println("After that mess you run into");
+			System.out.println();
 		}
 	}
 
